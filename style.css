@@ -1,0 +1,176 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img {
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal (jika ada tinggi tertentu) */
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  height: 50px;
+  padding: 5px;
+  font-size: 30px;
+  color: blanchedalmond;
+  text-shadow: 2px 2px 6px;
+  /* width: 100%; */
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(255, 205, 235);
+  text-shadow: 2px 2px 6px;
+  padding-bottom: 50px;
+}
+
+.kotak1 {
+  width: 1300px; /*lebar */
+  height: 580px; /*tinggi */
+  background-color: rgba(233, 215, 237, 0.566);
+  border-radius: 10px; /*lengkung sudut */
+  display: grid;
+  margin: 0 auto; /*mengatur posisi ke tengah*/
+  justify-content: center; /*agar di tengah */
+  box-shadow: 10px 10px 50px; /*bayangan */
+}
+
+.kotak2 {
+  width: 1200px;
+  height: 480px;
+  background-color: rgba(172, 170, 205, 0.744);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.kotak3 {
+  width: 500px;
+  height: 250px;
+  background-color: rgb(136, 123, 164);
+  display: grid;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-right: 90px;
+  border-radius: 5px;
+  float: left;
+}
+
+/* .kotak3 input {
+  margin-top: 20px; /* Sesuaikan jaraknya */
+/* margin-left: 20px;
+} */
+
+.kotak3 td.text2 {
+  padding-left: 10px; /* Atur sesuai kebutuhan */
+  padding-top: 10px;
+}
+
+.kotak4 {
+  width: 500px;
+  height: 340px;
+  background-color: rgba(134, 136, 182, 0.76);
+  display: grid;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.kotak4 td.text2 {
+  padding-top: 10px;
+}
+
+.isi {
+  width: 180px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.diskon {
+  width: 50px;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.text1 {
+  margin: 10px;
+  color: rgb(246, 230, 255);
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 2px 2px 11px;
+  font-weight: bolder;
+  /* padding-bottom: 30px; */
+}
+
+.text2 {
+  padding-top: 20px;
+  color: rgb(246, 230, 255);
+  text-align: left;
+  font-size: 17px;
+  text-shadow: 2px 2px 11px;
+  font-weight: bold;
+}
+.tombol {
+  width: 60px;
+  padding: 6px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(112, 153, 209);
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tombol:hover {
+  background: linear-gradient(
+    90deg,
+    #422899,
+    #5240b8
+  ); /* Efek hover lebih gelap */
+}
+
+.kembalian {
+  width: 100px;
+  padding: 6px;
+  /* margin-top: 100px; */
+  border-radius: 5px;
+  background-color: rgba(223, 175, 45, 0.492);
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: bold;
+  text-align: center;
+}
+
+.kembalian:hover {
+  background: linear-gradient(
+    90deg,
+    #fb619ccf,
+    #b65b9e
+  ); /* Efek hover lebih gelap */
+}
+
+.tabel {
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding: 8px;
+  position: absolute;
+}
+
+.tabel1 {
+  width: 450px;
+  padding: 2px;
+  margin-bottom: 50px;
+  position: absolute;
+}

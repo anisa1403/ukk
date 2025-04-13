@@ -5,31 +5,32 @@ $hargadiskon=$_POST['hargadiskon']; //variabel
 $diskon=$_POST['diskon']; //variabel
 $uang=$_POST['uang'];
 $hargatotal=$_POST['hargatotal'];
+$kembalian = 0;
 
-if($uang==""){
+if ($uang == "") {
     echo "<script>
     alert('Tolong Masukkan Nominal Uang');
     window.location='index3.php';
     </script>";
-}elseif ($uang<=0) {
+} elseif ($uang <= 0) {
     echo "<script>
-    alert('Tolong Masukkan Nominal Uang yang Valid;
-    window.location='index3.php;
+    alert('Tolong Masukkan Nominal Uang yang Valid');
+    window.location='index3.php';
     </script>";
-}elseif ($hargatotal=="") {
+} elseif ($hargatotal == "") {
     echo "<script>
     alert('Tolong Masukkan Harga Total');
     window.location='index3.php';
     </script>";
-}else{
-    $kembalian=$uang-$hargatotal;
-    if($uang<$hargatotal){
-        echo "<script>
-        alert('Uang Anda Kurang');
-        window.location='index3.php';
-        </script>";
-    }
+} elseif ($uang < $hargatotal) {
+    echo "<script>
+    alert('Uang Anda Kurang');
+    window.location='index3.php';
+    </script>";
+} else {
+    $kembalian = $uang - $hargatotal;
 }
+
 ?>
 
 <!DOCTYPE html>

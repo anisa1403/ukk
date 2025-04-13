@@ -15,7 +15,7 @@ if($namabarang==""){
     </script>";
 }elseif ($hargaawal<=0){
     echo "<script>
-    alert('Harga Tidak Boleh Kurang dari 0');
+    alert('Harga Tidak Boleh 0');
     window.location='index3.php';
     </script>";
 }elseif($diskon=="") {
@@ -31,14 +31,13 @@ if($namabarang==""){
 }elseif($diskon<0){
     echo "<script>
     alert('Diskon Tidak Boleh Kurang dari 0');
-    window.location='index3.php';</script>";
+    window.location='index3.php';
+    </script>";
 }else{ //jika terisi
 //rumus
 $hargadiskon=($diskon/100)*$hargaawal;
 $hargatotal=$hargaawal-$hargadiskon;
 }
-
-
 
 ?>
 
@@ -131,7 +130,8 @@ $hargatotal=$hargaawal-$hargadiskon;
                                 <input type="hidden" name="hargadiskon" value="<?php echo $hargadiskon;?>">
                                 <input type="hidden" name="hargatotal" value="<?php echo $hargatotal;?>">
                                 <input type="submit" value="kembalian" class="kembalian">
-                            </form></td>
+                                </form>
+                            </td>
                         </tr>
                         <tr>
                             <td class="text2">Kembalian</td>
